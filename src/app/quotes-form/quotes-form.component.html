@@ -1,0 +1,30 @@
+<!-- Creating a userInput Form -->
+<form (ngSubmit)='submitQuotes()'>
+
+  <!-- PosterName INput -->
+  <div class="form-group">
+    <label>Poster Name
+      <input type="text" class="form-control" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+    </label>
+  </div>
+
+
+  <!-- Author INput -->
+  <div class="form-group">
+    <label>Author
+      <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="author" #author="ngModel"
+        required>
+    </label>
+  </div>
+
+
+  <!-- Decription Quotes Input -->
+  <div class="form-group">
+    <label>Quote Description
+      <textarea id="description" class="form-control" id="description" [(ngModel)]="newQuote.description" name="description"
+        #name="ngModel" required></textarea>
+    </label>
+  </div>
+  <button type="button" class="btn btn-primary ">Submit Quote</button>
+
+</form>

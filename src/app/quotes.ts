@@ -1,11 +1,17 @@
-export class Quote {
-  like: number;
-  dislike: number;
-  date: Date;
+export var QuotesList = []
 
-  constructor(
-    public name: string,
-    public author: string,
-    public description: string
-  ) {}
+export class Quote {
+  private id: number;
+  public created: Date;
+  public detailsVisible: boolean;
+  public quoteLikes: number;
+  public quoteDislikes: number;
+
+  constructor(public creator: string, public qouteName: string, public description: string) {
+    this.id = QuotesList.length + 1
+    this.created = new Date()
+    this.detailsVisible = false
+    this.quoteLikes = 0
+    this.quoteDislikes = 0
+  }
 }

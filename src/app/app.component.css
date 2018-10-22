@@ -21,3 +21,8 @@ button {
   padding: 10px 15px;
   margin-left: 10%;
 }
+ul {
+  margin: 2%;
+  list-style: none;
+}
+

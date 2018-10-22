@@ -6,3 +6,12 @@ body .recent_quotes {
   padding-right: 0%;
   text-align: center;
 }
+body .add_quote {
+  padding: 20px;
+  float: left;
+  margin-left: 4%;
+  right: 0;
+  width: 20%;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 10px grey;
+}

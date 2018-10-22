@@ -15,3 +15,9 @@ body .add_quote {
   background-color: #fff;
   box-shadow: 5px 5px 10px 10px grey;
 }
+button {
+  background-color: grey;
+  color: #000;
+  padding: 10px 15px;
+  margin-left: 10%;
+}

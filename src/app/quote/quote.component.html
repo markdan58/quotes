@@ -1,0 +1,15 @@
+<div class="container-fluid" id="main">
+<div *ngFor='let quote of quotes;let i = index'>
+  <div class="quote_container">
+    <p>
+      Quote Description:{{quote.description}}<br>Poster Name: {{quote.quotename}}<br>Author: {{quote.creator}}</p>
+    <ul>
+      <li><button (click)="downvoteQuote(quote.id)" type="submit" name="downvote"><i class="fa fa-minus"></i>
+          Dislikes: {{quote.quoteDislikes}}</button></li>
+      <li><button (click)="upvoteQuote(quote.id)" type="submit" name="upvote"><i class="fa fa-plus"></i> Likes
+          {{quote.quoteLikes}}</button></li>
+      <app-quotes-details [quote]='Quote' (isComplete)='QuoteDelete($event,i)'></app-quotes-details>
+    </ul>
+  </div>
+</div>
+</div>
